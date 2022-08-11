@@ -1,0 +1,75 @@
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.bg-secondary {
+  background-color: var(--primary-color);
+}
+.bg-black {
+  background-color: #222;
+  color: white;
+}
+.bg-black-transparent {
+  background-color: #222a;
+  color: white;
+}
+.bg-gray {
+  background-color: #eee;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 2.7px rgba(0, 0, 0, 0.022),
+    0px 0px 6.9px rgba(0, 0, 0, 0.031), 0px 0px 14.2px rgba(0, 0, 0, 0.039),
+    0px 0px 29.2px rgba(0, 0, 0, 0.048), 0px 0px 80px rgba(0, 0, 0, 0.07);
+}
+
+.card {
+  box-shadow: 0.6px 0.6px 2.2px rgba(0, 0, 0, 0.02),
+    1.3px 1.4px 5.3px rgba(0, 0, 0, 0.028),
+    2.5px 2.6px 10px rgba(0, 0, 0, 0.035),
+    4.5px 4.7px 17.9px rgba(0, 0, 0, 0.042),
+    8.4px 8.8px 33.4px rgba(0, 0, 0, 0.05), 20px 21px 80px rgba(0, 0, 0, 0.07);
+}
+
+.title-primary {
+  text-decoration: underline solid 5px var(--primary-color);
+}
+
+.primary-underline {
+  position: relative;
+}
+.primary-underline::after {
+  position: absolute;
+  content: "";
+  background-color: var(--primary-color);
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 0;
+  transition: width 0.35s ease;
+}
+.primary-underline:hover::after {
+  width: 100%;
+}
+
+.primary-link-bg {
+  transition: background-color 0.35s ease;
+  padding: 0.2rem 0.5rem;
+}
+.primary-link-bg:hover {
+  background-color: #00acc1;
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.35s ease;
+}
+.primary-button:hover {
+  opacity: 1;
+}
+
+.required {
+  color: var(--primary-color);
+}
